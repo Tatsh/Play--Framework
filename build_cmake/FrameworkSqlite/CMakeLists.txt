@@ -3,7 +3,7 @@ project(Framework_Sqlite)
 
 include(../Framework_Common.cmake)
 
-find_package(SQLite3)
+find_package(SQLite3 REQUIRED)
 if(SQLite3_FOUND)
 	LIST(APPEND PROJECT_LIBS SQLite::SQLite3)
 else()

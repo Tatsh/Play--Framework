@@ -16,7 +16,7 @@ endif()
 
 set(USE_GLEW OFF)
 if(NOT USE_GLES AND NOT APPLE)
-	find_package(GLEW)
+	find_package(GLEW REQUIRED)
 	if(GLEW_FOUND)
 		list(APPEND PROJECT_LIBS GLEW::GLEW)
 	else()
